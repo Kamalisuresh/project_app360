@@ -25,7 +25,7 @@ function EngineerDashboard(){
         try{
 
             const response = await axios.get(
-                `https://app360-backend.onrender.com/api/alarms/update/${id}`,
+                "https://app360-backend.onrender.com/api/alarms"
             );
 
             setAlarms(response.data);

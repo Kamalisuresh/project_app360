@@ -72,7 +72,7 @@ function AdminDashboard(){
         try{
 
             const response = await axios.get(
-                "http://localhost:5000/api/alarms/dashboard/counts"
+                "https://app360-backend.onrender.com/api/alarms/dashboard/counts"
             );
 
             setCounts(response.data);
@@ -90,7 +90,7 @@ function AdminDashboard(){
         try{
 
             const response = await axios.get(
-                "http://localhost:5000/api/alarms"
+                "https://app360-backend.onrender.com/api/alarms"
             );
 
             setAlarms(response.data);
@@ -108,7 +108,7 @@ function AdminDashboard(){
         try{
 
             await axios.post(
-                "http://localhost:5000/api/alarms/create",
+                "https://app360-backend.onrender.com/api/alarms/create",
                 {
                     title,
                     description,
@@ -140,7 +140,7 @@ function AdminDashboard(){
         try{
 
             await axios.delete(
-                `http://localhost:5000/api/alarms/delete/${id}`
+                `https://app360-backend.onrender.com/api/alarms/update/${id}`,
             );
 
             toast.error("Alarm Deleted");

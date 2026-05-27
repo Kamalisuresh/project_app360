@@ -34,7 +34,7 @@ function ViewerDashboard(){
         try{
 
             const response = await axios.get(
-                "http://localhost:5000/api/alarms/dashboard/counts"
+                "https://app360-backend.onrender.com/api/alarms/dashboard/counts"
             );
 
             setCounts(response.data);
@@ -52,7 +52,7 @@ function ViewerDashboard(){
         try{
 
             const response = await axios.get(
-                `https://app360-backend.onrender.com/api/alarms/update/${id}`,
+                "https://app360-backend.onrender.com/api/alarms"
             );
 
             setAlarms(response.data);
