@@ -161,7 +161,7 @@ function AdminDashboard(){
         try{
 
             await axios.put(
-                `http://localhost:5000/api/alarms/update/${id}`,
+                `https://app360-backend.onrender.com/api/alarms/update/${id}`,
                 {
                     status:"Resolved"
                 }

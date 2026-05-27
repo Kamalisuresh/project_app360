@@ -52,7 +52,7 @@ function ViewerDashboard(){
         try{
 
             const response = await axios.get(
-                "http://localhost:5000/api/alarms"
+                `https://app360-backend.onrender.com/api/alarms/update/${id}`,
             );
 
             setAlarms(response.data);
